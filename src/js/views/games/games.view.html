@@ -1,0 +1,44 @@
+<h1>Game List</h1>
+<table class="table table-striped">
+    <tbody>
+        <tr ng-repeat="game in vm.gameList | filter: { publisher: vm.filterData }">
+            <td>{{game.title}}</td>
+            <td>{{game.na_releaseDate | date: 'MMMM yyyy' | ifEmpty: 'Unreleased' }}</td>
+            <td>{{game.eu_releaseDate | date: 'MMMM yyyy' | ifEmpty: 'Unreleased' }}</td>
+            <td>{{game.publisher}}</td>
+            <td>
+                <a class="btn btn-primary" ui-sref="GameDetail({ id: game.id })">
+                    View
+                </a>
+                <a class="btn btn-default" ui-sref="GameEdit({ id: game.id })">
+                    Edit
+                </a>
+                <a class="btn btn-danger" ui-sref="GameDelete({ id: game.id })">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>North American Release</th>
+            <th>European Release</th>
+            <th>Publisher</th>
+            <th><div class=" btn btn-primary" ui-sref="GameCreate({ id: game.id})">Create New Game Record</div></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon glyphicon glyphicon-filter" title="filter by publisher"></span>
+                    <input type="text" class="form-control" ng-model-options="{ debounce: 100 }" ng-model="vm.filterData">
+                </div>
+
+                
+            </th>
+            <th></th>
+    </thead>
+</table>

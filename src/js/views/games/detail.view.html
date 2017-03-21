@@ -1,0 +1,11 @@
+<h1>{{vm.game.title}}</h1>
+<ul>
+    <li>Publisher: {{vm.game.publisher}}</li>
+    <li>NA Release: {{vm.game.na_releaseDate | date: 'MMMM yyyy' | ifEmpty: 'Unreleased' }}</li>
+    <li>EU Release: {{vm.game.eu_releaseDate | date: 'MMMM yyyy' | ifEmpty: 'Unreleased' }}</li>
+</ul>
+<div>
+    <a class="btn btn-primary" ui-sref="Games">Go Back to Game List</a>
+    <a class="btn btn-default" ui-sref="GameEdit({id: vm.game.id})">Edit</a>
+    <a class="btn btn-danger" ui-sref="GameDelete({id: vm.game.id})">Delete</a>
+</div>
