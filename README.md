@@ -1,4 +1,16 @@
-#  CRUD and Validation Lesson Homework Exersize
+#  Using the Lesson6 CRUD processes that we built along with all the routing scenarios, complete the following.
+
+## BOOTSTRAP GAME LIBRARY
+*  Angular
+*  Bootstrap
+*  Angular-Ui-Route
+## Full CRUD to manage game library
+*  Create, Read, Update, Delete
+## STRETCH GOAL
+*  Use Bootstrap Modals to open details, edit and delete views instead of routing.
+----
+
+###  CRUD and Validation Lesson Homework Exersize
 
 *  Create another vieiw that allows for creating a game model
 *  Need a another method in the detail controller for adding and use the service to create the instance
