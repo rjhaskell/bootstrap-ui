@@ -1,7 +1,7 @@
 {
   "name": "lesson06",
   "version": "1.0.0",
-  "description": "template project for typescript and angular",
+  "description": "Demonstrate BootstrapUI using `Game` template project for typescript and angular",
   "main": "",
   "scripts": {
     "tsc:w": "tsc -w",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itanex/TypeScriptClasses.git"
+    "url": "git+https://github.com/rjhaskell/bootstrap-ui.git"
   },
-  "author": "Bryan Wood <whenidev@gmail.com>",
+  "author": "Robert Haskell <rjhaskell23@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/itanex/TypeScriptClasses/issues"
+    "url": ""
   },
   "private": true,
-  "homepage": "https://github.com/itanex/TypeScriptClasses#readme",
+  "homepage": "",
   "devDependencies": {
     "@types/angular": "^1.6.9",
     "@types/angular-resource": "^1.5.8",
