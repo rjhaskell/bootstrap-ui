@@ -1,12 +1,12 @@
 {
   "name": "lesson06",
-  "description": "template project for typescript and angular",
+  "description": "Demonstrate BootstrapUI using `Game` template project for typescript and angular",
   "main": "",
   "authors": [
-    "Bryan Wood <whenidev@gmail.com>"
+    "Robert <rjhaskell23@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/itanex/TypeScriptClasses",
+  "homepage": "https://github.com/rjhaskell/bootstrap-ui.git",
   "ignore": [
     "**/.*",
     "node_modules",
